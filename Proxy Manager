@@ -1,0 +1,41 @@
+-- Orion Libary
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Proxy Manager", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Plr = game:GetService("Players").LocalPlayer
+
+OrionLib:MakeNotification({
+	Name = "Proxy Manager I Executed!",
+	Content = "Open any proxy hub from here!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://8065201695",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Thank you for using proxy made by DevLumeX"
+})
+
+local Tab = Window:MakeTab({
+	Name = "Hubs",
+	Icon = "rbxassetid://8065201695",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Open any hub from proxy here!"
+})
+
+Tab:AddButton({
+	Name = "Proxy Hub I Tha Bronx 3",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Zerozzz13/Proxy-Hub-Tha-Bronx-3/refs/heads/main/ProXy%20Hub')))()
+  	end    
+})
