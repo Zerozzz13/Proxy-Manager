@@ -36,6 +36,6 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Proxy Hub I Tha Bronx 3",
 	Callback = function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Zerozzz13/Proxy-Hub-Tha-Bronx-3/refs/heads/main/Proxy%20Hub%20Key%20Manager')))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Zerozzz13/ProxyHubNew-/refs/heads/main/ProxyHubNew')))()
   	end    
 })
